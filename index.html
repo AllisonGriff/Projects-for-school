@@ -11,22 +11,27 @@
     <!-- add google font and other resources here -->
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="./nav.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+    
     <header>
-      <a class="logo" href="/"></a>
-      <nav aria-label="main navigation" class="mainNav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./adoptable-animals.html">Animals</a></li>
-          <li><a href="./how-to-adopt.html">Information about Adopting</a></li>
-          <li><a href="./animal-control.html">Animal Control</a></li>
-          <li><a href="./faq.html">FAQ</a></li>
-        </ul>
-      </nav>
+     <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+  <span class="sr-only">Toggle navigation</span>
+  ☰
+</button>
+
+<nav id="main-navigation" aria-label="main navigation" class="mainNav">
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./adoptable-animals.html">Animals</a></li>
+    <li><a href="./how-to-adopt.html">Adoption Center</a></li>
+    <li><a href="./animal-control.html">Animal Control</a></li>
+    <li><a href="./faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
     </header>
 <!--  -->
     <h1>Animal Care & Control</h1>
@@ -139,5 +144,7 @@
     <!-- Contact Us -->
      <!-- Footer -->
      <!--  -->
+
+     <script src="./nav/nav.js" defer></script>
   </body>
 </html>
