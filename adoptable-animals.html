@@ -1,40 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADD A TITLE</title>
-    <!-- add your own favicon - https://favicon.io/ -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- reset default browser stylesheet -->
-    <link rel="stylesheet" href="css/modern-normalize.css" />
-    <!-- add google font and other resources here -->
 
-    <!-- custom styles -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADD A TITLE</title>
+  <!-- add your own favicon - https://favicon.io/ -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- reset default browser stylesheet -->
+  <link rel="stylesheet" href="css/modern-normalize.css" />
+  <!-- add google font and other resources here -->
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <header>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      ☰
+    </button>
+
+    <nav id="main-navigation" aria-label="main navigation" class="mainNav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./adoptable-animals.html">Animals</a></li>
+        <li><a href="./how-to-adopt.html">Adoption Center</a></li>
+        <li><a href="./animal-control.html">Animal Control</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!--  -->
+  <div class="wrapper">
+    <h1>Adoptable Animals</h1>
     
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+    <div class="card">
 
-  <body>
-       <header>
-     <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
-  <span class="sr-only">Toggle navigation</span>
-  ☰
-</button>
+  <!-- DOGS -->
+  <div class="animal-card"
+     data-name="Georgia Peach"
+     data-breed="Husky / Lab mix"
+     data-age="2 years"
+     data-description="Friendly, energetic, and loves people. Enjoys walks, playtime, and cuddles."
+     data-img="./images/dog5.jpg">
+  <img src="./images/dog5.jpg">
+  <h2>Georgia Peach</h2>
+  <div>
+    Breed:<span> Husky / Lab mix</span><br>
+    Approx Age:<span> 2 y/o</span>
+  </div>
+</div>
 
-<nav id="main-navigation" aria-label="main navigation" class="mainNav">
-  <ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./adoptable-animals.html">Animals</a></li>
-    <li><a href="./how-to-adopt.html">Adoption Center</a></li>
-    <li><a href="./animal-control.html">Animal Control</a></li>
-    <li><a href="./faq.html">FAQ</a></li>
-  </ul>
-</nav>
+<div class="animal-card"
+     data-name="Buddy"
+     data-breed="Hound mix"
+     data-age="4 years"
+     data-description="Calm, affectionate, and great with families. Knows basic commands."
+     data-img="./images/dog4.jpg">
+  <img src="./images/dog4.jpg">
+  <h2>Buddy</h2>
+  <div>
+    Breed:<span> Hound mix</span><br>
+    Approx Age:<span> 4 y/o</span>
+  </div>
+</div>
 
-    </header>
-    
+<div class="animal-card"
+     data-name="Luna"
+     data-breed="Hound Mix"
+     data-age="1.5 years"
+     data-description="Smart, alert, and eager to learn. Would thrive with an active adopter."
+     data-img="./images/dog2.jpg">
+  <img src="./images/dog2.jpg">
+  <h2>Luna</h2>
+  <div>
+    Breed:<span> Hound Mix</span><br>
+    Approx Age:<span> 1.5 y/o</span>
+  </div>
+</div>
 
-     <script src="./nav/nav.js" defer></script>
-  </body>
+<div class="animal-card"
+     data-name="Milo"
+     data-breed="Border Collie"
+     data-age="3 years"
+     data-description="Curious and playful with a great nose. Loves exploring and treats."
+     data-img="./images/dog1.jpg">
+  <img src="./images/dog1.jpg">
+  <h2>Milo</h2>
+  <div>
+    Breed:<span> Border Collie</span><br>
+    Approx Age:<span> 3 y/o</span>
+  </div>
+</div>
+
+<div class="animal-card"
+     data-name="Daisy"
+     data-breed="Pit Bull mix"
+     data-age="5 years"
+     data-description="Sweet, gentle, and loyal. Prefers a calm home and lots of affection."
+     data-img="./images/dog3.jpg">
+  <img src="./images/dog3.jpg">
+  <h2>Daisy</h2>
+  <div>
+    Breed:<span> Pit Bull mix</span><br>
+    Approx Age:<span> 5 y/o</span>
+  </div>
+</div>
+
+<!-- CATS -->
+
+<div class="animal-card"
+     data-name="Whiskers"
+     data-breed="Domestic Shorthair"
+     data-age="3 years"
+     data-description="Independent but affectionate once comfortable. Enjoys sunny windows."
+     data-img="./images/cat1.jpg">
+  <img src="./images/cat1.jpg">
+  <h2>Whiskers</h2>
+  <div>
+    Breed:<span> Domestic Shorthair</span><br>
+    Approx Age:<span> 3 y/o</span>
+  </div>
+</div>
+
+<div class="animal-card"
+     data-name="Binx"
+     data-breed="Domestic Shorthair"
+     data-age="1 year"
+     data-description="Playful and curious with lots of personality. Loves feather toys."
+     data-img="./images/cat3.jpg">
+  <img src="./images/cat3.jpg">
+  <h2>Binx</h2>
+  <div>
+    Breed:<span> Domestic Shorthair</span><br>
+    Approx Age:<span> 1 y/o</span>
+  </div>
+</div>
+
+<div class="animal-card"
+     data-name="Cleo"
+     data-breed="Tabby"
+     data-age="7 years"
+     data-description="Calm and affectionate senior cat who enjoys quiet companionship."
+     data-img="./images/cat2.jpg">
+  <img src="./images/cat2.jpg">
+  <h2>Cleo</h2>
+  <div>
+    Breed:<span> Tabby</span><br>
+    Approx Age:<span> 7 y/o</span>
+  </div>
+</div>
+
+<div class="animal-card"
+     data-name="Pumpkin"
+     data-breed="Domestic Shorthair"
+     data-age="5 months"
+     data-description="Energetic kitten who loves to climb, play, and nap after zoomies."
+     data-img="./images/cat4.jpg">
+  <img src="./images/cat4.jpg">
+  <h2>Pumpkin</h2>
+  <div>
+    Breed:<span> Domestic Shorthair</span><br>
+    Approx Age:<span> 5 months</span>
+  </div>
+</div>
+
+
+</div>
+
+
+  
+
+  </div>
+
+<div class="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+
+    <img id="modal-img" alt="">
+    <h2 id="modal-name"></h2>
+
+    <p><strong>Breed:</strong> <span id="modal-breed"></span></p>
+    <p><strong>Age:</strong> <span id="modal-age"></span></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+
+</article>
+
+
+    <!--  -->
+     </div>
+    <!-- Contact Us -->
+    <!-- Footer -->
+     <footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-section">
+      <h3> Animal Shelter</h3>
+      <p>
+        Operated by the City of Department of Public Works,
+        Animal Care & Control serves the community through education,
+        enforcement, and compassionate animal care.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>
+        Phone: <a href="tel:18123493492">(812) 222-2222</a><br />
+        Bloomington, Indiana
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="./adoptable-animals.html">Adoptable Animals</a></li>
+        <li><a href="./how-to-adopt.html">Adoption Center</a></li>
+        <li><a href="./animal-control.html">Animal Control</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!--  -->
+</footer>
+
+    <!--  -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.animal-card');
+    const overlay = document.querySelector('.modal-overlay');
+    const modal = overlay.querySelector('.modal');
+    const closeBtn = overlay.querySelector('.modal-close');
+
+    const modalImg = document.getElementById('modal-img');
+    const modalName = document.getElementById('modal-name');
+    const modalBreed = document.getElementById('modal-breed');
+    const modalAge = document.getElementById('modal-age');
+    const modalDesc = document.getElementById('modal-description');
+
+    // OPEN MODAL
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        modalImg.src = card.dataset.img || '';
+        modalImg.alt = card.dataset.name || '';
+
+        modalName.textContent = card.dataset.name || '';
+        modalBreed.textContent = card.dataset.breed || '';
+        modalAge.textContent = card.dataset.age || '';
+        modalDesc.textContent = card.dataset.description || '';
+
+        overlay.hidden = false;
+      });
+    });
+
+    // CLOSE MODAL (X button)
+    closeBtn.addEventListener('click', () => {
+      overlay.hidden = true;
+    });
+
+    // CLOSE MODAL (click outside)
+    overlay.addEventListener('click', (e) => {
+      if (!modal.contains(e.target)) {
+        overlay.hidden = true;
+      }
+    });
+
+    // CLOSE MODAL (ESC key)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !overlay.hidden) {
+        overlay.hidden = true;
+      }
+    });
+  });
+</script>
+
+
+ 
+  <script src="./nav/nav.js" defer></script>
+</body>
+
 </html>
