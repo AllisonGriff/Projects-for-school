@@ -1,10 +1,10 @@
 /* GLOBALS ONLY */
 :root {
-  --text: #041407;
+  --text: #050505;
   --background: #f4f8fb;
   --primary: #7094c4;
   --secondary: #555555;
-  --accent: #a7da58;
+  --accent: #0d741e;
 
   --br-sm: 8px;
   --br-lg: 16px;
@@ -57,18 +57,12 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 3px solid var(--accent);
   color: var(--text);
 }
 
 
-.logo {
-  width: 140px;
-  height: 40px;
-  background-color: #ddd;
-  text-decoration: none;
-  margin-bottom: 0.75rem;
-}
+
 
 
 .mainNav ul {
@@ -76,7 +70,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0;
+  margin: 0 150px;
   padding: 0;
   width: 100%;
 }
@@ -181,7 +175,7 @@ header {
 
 h1 {
   color: var(--text);
-  margin: 30px 0;
+  margin: 100px 0 30px 0;
 }
 
 .COA-home {
@@ -222,6 +216,7 @@ h1 {
 
 .title-link button:hover {
   border-color: var(--accent);
+  background-color: #bbe4c2;
 
 
 
@@ -233,6 +228,107 @@ h1 {
 }
 
 /* end hero styles */
+
+/* /////////////COAANIMALCONTROL////////////////*/
+.COA-AnimalControl {
+  background-color: color-mix(in srgb, var(--primary) 12%, transparent);
+  display: flex;
+  flex-direction: column-reverse;
+  width: min(90%, 1000px);
+  margin: 3rem auto;
+  align-items: center;
+  padding: 2.5rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--br-lg);
+  gap: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--br-lg);
+  border: 2px solid var(--primary);
+
+  background-color: var(--background);
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.button:hover {
+  background-color: #bbe4c2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+.COA-AnimalControl img {
+  width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  border-radius: var(--br-lg);
+  border: 2px solid var(--primary);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+
+.animalContolInfo {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: var(--background);
+  border-left: 10px solid var(--accent);
+  border-radius: var(--br-lg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.animalContolInfo dl {
+  margin: 0;
+}
+
+.animalContolInfo dt {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--secondary);
+  margin-top: 1.75rem;
+}
+
+.animalContolInfo dt:first-child {
+  margin-top: 0;
+}
+
+.animalContolInfo dd {
+  margin: 0.25rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Emergency emphasis */
+.animalContolInfo dt:last-of-type {
+  color: #b00020;
+}
+
+.animalContolInfo dd:last-of-type {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #b00020;
+}
+
+/*end COAANIMALCONTROL  */
 
 /* ////////Services SECTION/////// */
 
@@ -318,7 +414,7 @@ h1 {
 
 .footer-section h3 {
   margin-bottom: 12px;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .footer-section p {
@@ -387,6 +483,17 @@ h1 {
     gap: 20px;
 
   }
+
+  .COA-AnimalControl{
+    flex-direction: row;
+  }
+  .COA-AnimalControl div{
+  width: 60%;
+}
+.button{
+  margin: 0 80px 10px auto;
+}
+
 
   .title-link {
     min-width: 400px;

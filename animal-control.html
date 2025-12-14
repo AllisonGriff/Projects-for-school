@@ -2,41 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Control Center</title>
-    <!-- add your own favicon - https://favicon.io/ -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- reset default browser stylesheet -->
-    <link rel="stylesheet" href="css/modern-normalize.css">
-    <!-- add google font and other resources here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Control Center</title>
+  <!-- add your own favicon - https://favicon.io/ -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- reset default browser stylesheet -->
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <!-- add google font and other resources here -->
 
-    <!-- custom styles -->
-     
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- custom styles -->
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-          <header>
-     <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
-  <span class="sr-only">Toggle navigation</span>
-  ☰
-</button>
+  <header>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      ☰
+    </button>
 
-<nav id="main-navigation" aria-label="main navigation" class="mainNav">
-  <ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./adoptable-animals.html">Animals</a></li>
-    <li><a href="./how-to-adopt.html">Adoption Center</a></li>
-    <li><a href="./animal-control.html">Animal Control</a></li>
-    <li><a href="./faq.html">FAQ</a></li>
-  </ul>
-</nav>
+    <nav id="main-navigation" aria-label="main navigation" class="mainNav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./adoptable-animals.html">Animals</a></li>
+        <li><a href="./how-to-adopt.html">Adoption Center</a></li>
+        <li><a href="./animal-control.html">Animal Control</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </header>
-    <div class="COA AnimalControl">
+  <div class="wrapper">
+    <h1>Animal Control</h1>
+    <div class="COA-AnimalControl">
       <div>
-        <h1>Animal Control</h1>
+        <h2>What We Do</h2>
         <p>
           Animal control responds to calls including picking up stray and
           injured pets or wildlife, investigating cruelty and neglect
@@ -45,27 +47,65 @@
           text of the ordinances related to Animal Care and Control, please
           refer to Title 7 of the Municipal Code
         </p>
+        <button class="button"> Frequently Asked Questions</button>
       </div>
-      <img src="" />
+      <img src="./images/animal-control-coa.png" />
     </div>
     <div>
-<dl>
-  <dt>Animal Control Hours:</dt>
-  <dd>Mon/Wed/Thu/Sat: 8 a.m.-5 p.m. | Tue/Fri: 8 a.m.-6 p.m.</dd>
 
-  <dt>Animal Control Phone:</dt>
-  <dd>812-349-3492</dd>
+      <div class="animalContolInfo">
+        <dl>
+          <dt>Animal Control Hours:</dt>
+          <dd>Mon/Wed/Thu/Sat: 8 a.m.-5 p.m. | Tue/Fri: 8 a.m.-6 p.m.</dd>
 
-  <dt>After Hours Emergencies:</dt>
-  <dd>812-339-1444</dd>
-</dl>
+          <dt>Animal Control Phone:</dt>
+          <dd>812-349-3492</dd>
 
-        
+          <dt>After Hours Emergencies:</dt>
+          <dd>812-339-1444</dd>
+        </dl>
       </div>
+
+
     </div>
+  </div>
+  </div>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
 
-     <script src="./nav/nav.js" defer></script>
+      <div class="footer-section">
+        <h3> Animal Shelter</h3>
+        <p>
+          Operated by the City of Department of Public Works,
+          Animal Care & Control serves the community through education,
+          enforcement, and compassionate animal care.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          Phone: <a href="tel:18123493492">(812) 222-2222</a><br />
+          Bloomington, Indiana
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="./adoptable-animals.html">Adoptable Animals</a></li>
+          <li><a href="./how-to-adopt.html">Adoption Center</a></li>
+          <li><a href="./animal-control.html">Animal Control</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <!--  -->
+  </footer>
+  <script src="./nav/nav.js" defer></script>
 </body>
 
 </html>
