@@ -31,9 +31,6 @@ img {
 body {
  
   background-color: var(--background);
-  background-image: url("../images/paw-print.svg");
-  background-repeat: repeat;
-  background-size: 120px 120px;
 
 }
 
@@ -42,13 +39,15 @@ body {
 .wrapper {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto;
+  /* border: 3px solid var(--accent);
+  border-radius: var(--br-sm); */
 
 
 }
 
 article>div {
-  margin-top: 60px;
+  margin-top: 160px;
 }
 
 /* /////////////////////////NAV ONLY////////////// */
@@ -182,7 +181,7 @@ header {
 
 h1 {
   color: var(--text);
-  margin: 60px 0;
+  margin: 30px 0;
 }
 
 .COA-home {
@@ -215,15 +214,15 @@ h1 {
   color: var(--text);
   padding: 8px 12px;
   border-radius: 16px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:  border-color 0.2s ease;
   border: 2px solid var(--text);
   width: fit-content;
   margin: 0 10px 10px auto;
 }
 
 .title-link button:hover {
-  background-color: var(--secondary);
-  color: var(--background);
+  border-color: var(--accent);
+
 
 
 }
@@ -252,7 +251,7 @@ h1 {
 /* cards */
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   width: fit-content;
   margin: 0 auto;
@@ -289,9 +288,10 @@ h1 {
 }
 
 .title-description:hover {
-  transform: translateY(-20px);
+  transform: translateX(20px);
   box-shadow: 0 10px 24px rgba(4, 16, 20, 0.18);
   border-color: var(--accent);
+  background-color:#5555551e;
 }
 
 
@@ -371,6 +371,11 @@ h1 {
     max-width: 500px;
     margin: 0 auto;
   }
+  .card{
+    flex-direction: row;
+  }
+  .title-description:hover {
+  transform: translateY(-20px);}
 }
 
 /* Large devices (desktops, 992px and up) */
